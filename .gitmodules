@@ -1,0 +1,3 @@
+[submodule "src/lib/knx"]
+	path = src/lib/knx
+	url = https://github.com/thelsing/knx.git
