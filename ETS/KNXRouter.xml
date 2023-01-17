@@ -61,18 +61,6 @@
                 <LdCtrlLoadCompleted ObjType="6" />
                 <LdCtrlRestart />
               </LoadProcedure>
-              <LoadProcedure ProcedureType="Load" ProcedureSubType="par">
-                <LdCtrlConnect />
-                <LdCtrlLoad ObjType="6" />
-                <LdCtrlLoadCompleted ObjType="6" />
-                <LdCtrlRestart />
-              </LoadProcedure>
-              <LoadProcedure ProcedureType="Load" ProcedureSubType="cfg">
-                <LdCtrlConnect />
-                <LdCtrlLoad ObjType="6" />
-                <LdCtrlLoadCompleted ObjType="6" />
-                <LdCtrlRestart />
-              </LoadProcedure>
             </LoadProcedures>
             <Options LegacyNoPartialDownload="true" LineCoupler0912NewProgrammingStyle="true"
               DownloadInvisibleParameters="Background" />
