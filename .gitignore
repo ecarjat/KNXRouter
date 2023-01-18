@@ -32,3 +32,10 @@
 *.out
 *.app
 
+kicad/gerber/*
+kicad/KNXRouter-backups/*
+tmp/*
+src/lib/ethernet_w5500.tgz
+ETS/IPRouterCL/*
+ETS/knxprod/*
+ETS/IP_Router_CL_1.1_EIFAItRS_CERT.knxprod

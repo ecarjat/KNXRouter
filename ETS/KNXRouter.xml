@@ -9,8 +9,8 @@
         </CatalogSection>
       </Catalog>
       <ApplicationPrograms>
-        <ApplicationProgram Id="%AID%" ApplicationNumber="50000" ApplicationVersion="10"
-          ReplacesVersions="9" ProgramType="ApplicationProgram" MaskVersion="MV-091A"
+        <ApplicationProgram Id="%AID%" ApplicationNumber="50000" ApplicationVersion="15"
+          ReplacesVersions="14" ProgramType="ApplicationProgram" MaskVersion="MV-091A"
           Name="KNXRouter" DefaultLanguage="en-US" LoadProcedureStyle="ProductProcedure" PeiType="0"
           DynamicTableManagement="false" Linkable="false" MinEtsVersion="4.0">
           <Static>
@@ -57,8 +57,12 @@
               <LoadProcedure ProcedureType="Load" ProcedureSubType="all">
                 <LdCtrlConnect />
                 <LdCtrlCompareProp InlineData="00FA" ObjIdx="0" PropId="12" />
+                <LdCtrlWriteProp ObjType="6" PropId="67" Verify="true" InlineData="FF" />
                 <LdCtrlLoad ObjType="6" />
                 <LdCtrlLoadCompleted ObjType="6" />
+                <LdCtrlWriteMem Address="256" Size="256" Verify="true" />
+                <LdCtrlLoad ObjType="3" />
+                <LdCtrlLoadCompleted ObjType="3" />
                 <LdCtrlRestart />
               </LoadProcedure>
             </LoadProcedures>
